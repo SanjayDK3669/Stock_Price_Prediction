@@ -92,15 +92,15 @@ scale = 1/scaler.scale_
 predict = predict * scale 
 y = y * scale
 
-st.subheader("Original Price v/s Predicted Price")
-fig4 = plt.figure(figsize=(8, 8))
-plt.plot(predict, 'r', label = "Original Prince")
-plt.plot(y, 'b', label = "Predicted Price")
-plt.xlabel("Time")
-plt.ylabel("Price")
-plt.show()
-plt.legend()
-st.pyplot(fig4)
+# st.subheader("Original Price v/s Predicted Price")
+# fig4 = plt.figure(figsize=(8, 8))
+# plt.plot(predict, 'r', label = "Predicted Price")
+# plt.plot(y, 'b', label = "Original Prince")
+# plt.xlabel("Time")
+# plt.ylabel("Price")
+# plt.show()
+# plt.legend()
+# st.pyplot(fig4)
 
 # Use only the first 100 days' closing prices for future prediction
 last_100_days = data.Close[:100].values.reshape(-1, 1)
